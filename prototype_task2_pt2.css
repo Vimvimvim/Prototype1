@@ -1,5 +1,5 @@
 #title {
-  font-size: 25px;
+  font-size: 35px;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -20,7 +20,7 @@
 #closingstatement{
   position:absolute;
   margin-top: 100px;
-  left:30%;
+  left:34%;
   display: none;
   font-size: 30px;
 }
@@ -81,7 +81,6 @@ input[type="text"]
   padding: 50x;
   background-color: rgba(255,255,255,0.75); 
 }
-
 #left {
     position: absolute;
     top: 45%;
