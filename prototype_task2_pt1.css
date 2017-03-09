@@ -17,15 +17,6 @@
   color: lightcoral;
 }
 
-#closingstatement{
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  display: none;
-  color: #3d3d5c;
-  font-size: 30px;
-}
-
 body{
     background: linear-gradient(to bottom right, pink, lightblue);
   font-family: Arial, Helvetica, sans-serif;
@@ -35,27 +26,6 @@ body{
     flex-direction: column;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-input[type="text"]
-{
-    font-size:24px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  color: #888;
-}
-
-input[type="date"] {
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  color: #888;
-}
-
-textarea[name="description of dream"]{
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  color: #888;
-}
-.formz {
-  margin: 25px;
- 
 }
 
 .arrowButts {
@@ -70,25 +40,6 @@ textarea[name="description of dream"]{
   cursor: pointer;
 }
 
-#homeButt{
-  position: absolute;
-  top: 50%;
-  left: 46.5%;
-  background: LightBlue;
-  font-size: 20px;
-  text-align: center;
-  vertical-align: middle;
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-  display: none;
-  cursor: pointer;
-}
-
-#homeButt:hover{
-  background-color: rgba(255,255,255,0.05); 
-}
-
 #window {
   position: relative;
   height: 475px;
@@ -96,13 +47,55 @@ textarea[name="description of dream"]{
   background-color: rgba(255,255,255,0.45); 
 }
 
+
 #left {
     position: absolute;
     top: 35%;
     left: 25px;
 }
-#right {
-    position: absolute;
-    top: 35%;
-    right: 25px;
+
+#scroll{
+    margin: 40px 0px 0px 0px; 
+    width: 75%;
+    height: 70%;
+    overflow: scroll;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#firstRow {
+  color: #3d3d5c;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.45);
+  font-size: 20px;
+}
+
+table {
+      border-collapse: collapse;
+  cursor: default;
+}
+
+td, th {
+  border: 1px solid grey;
+    text-align: left;
+    padding: 8px;
+}
+
+#question {
+  font-size: 35px;
+  color: #3d3d5c;
+  cursor: default;
+}
+
+tr:hover {
+  background-color: #B6C5E3;
+}
+
+a:link {
+  color: #8C001A;
+  font-weight: bold;
+}
+
+a:active {
+  color: #3d3d5c;
+  font-weight: bold;
 }

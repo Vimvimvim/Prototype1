@@ -44,3 +44,24 @@ var titleButton = document.getElementById("title");
 titleButton.onclick = function(e) {
   window.location.href = "index.html";
 }
+
+function inputFocus(i){
+  if(i.value==i.defaultValue){
+    i.value="";
+    i.style.color = "#000";
+  }
+}
+
+function inputBlur(i){
+  if(i.value=="") {
+     i.value=i.defaultValue;
+     i.style.color="#888"; 
+     i.size = 15;
+  }
+}
+
+function expand(i){
+  if(i.value.length > i.size){
+    i.size = i.size + 1;
+  } 
+}

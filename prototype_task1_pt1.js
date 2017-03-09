@@ -1,3 +1,7 @@
+var emotionDisp = document.getElementById("emotionDisp");
+
+emotionDisp.innerHTML = "";
+
 for (var i=0; i<=35; i++) {
   var emotion = document.getElementById(""+i);
   if (emotion != null) {
@@ -6,7 +10,14 @@ for (var i=0; i<=35; i++) {
       if (current.style.backgroundColor != "lightpink"){
         current.style.backgroundColor = "lightpink";
       } else {
-        current.style.backgroundColor = "lightblue";
+        current.style.backgroundColor = "#B6C5E3";
+      }
+      
+      if (!(emotionDisp.innerHTML.indexOf(current.innerHTML) > -1)){
+        if (emotionDisp.innerHTML != ""){
+          emotionDisp.innerHTML += ", "; 
+        }
+        emotionDisp.innerHTML += current.innerHTML;
       }
     }
   }
@@ -19,9 +30,16 @@ for (var i=0; i< 7; i++) {
     curEmotion.onclick = function (e) {
     var currentEmotion = e.target;
       if (currentEmotion.style.color == "lightcoral"){
-        currentEmotion.style.color = "navy";
+        currentEmotion.style.color = "#3d3d5c";
       } else {
         currentEmotion.style.color = "lightcoral";
+        currentEmotion.style.borderColor = "lightcoral";
+      }
+      if (!(emotionDisp.innerHTML.indexOf(currentEmotion.innerHTML) > -1)){
+        if (emotionDisp.innerHTML != ""){
+          emotionDisp.innerHTML += ", "; 
+        }
+        emotionDisp.innerHTML += currentEmotion.innerHTML;
       }
     }
   }
