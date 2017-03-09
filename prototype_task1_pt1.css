@@ -10,7 +10,9 @@
 }
 
 #question {
-  font-size: 30px;
+  font-size: 35px;
+  color: #3d3d5c;
+  cursor: default;
 }
 
 body{
@@ -24,36 +26,49 @@ body{
     background-attachment: fixed;
 }
 
+.row > div {
+  display: inline-block;
+  display: -moz-inline-box;
+}
+
+
+
 .emotionButts {
   background: none;
-  border: none;
+  position: relative;
   padding: 7px;
+  border-color: #3d3d5c;
+  border-style: solid;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-  text-shadow: 2px 2px lightgrey;
-  color: navy;
+  color: #3d3d5c;
   margin-top: 15px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
   cursor: pointer;
 }
 
 .arrowButts {
-  background: LightCoral;
-  font-size: 30px;
+  font-size: 100px;
   text-align: center;
   vertical-align: middle;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  padding-bottom: 14px;
+  border: none;
+  background: none;
+  color: black;
   vertical-align: middle;
   cursor: pointer;
+
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: lightblue;
-    min-width: 60px;
+    background-color: #B6C5E3;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
     z-index: 1;
 }
 
@@ -67,58 +82,73 @@ body{
 }
 
 .dropdown{
-    display: relative;
+    position: relative;
     display: inline-block;
 }
 
-.dropdown-content p:hover {
+.dropdown-content p:hover{
   background-color: rgba(255,255,255,0.45);
 }
 
-.emotionButts:hover {
-  color: lightblue;
+.emotionButts:hover{
+  color: #B6C5E3;
+  border-color: #B6C5E3;
 }
 
 #title:hover {
-    text-shadow: 2px 2px lightgrey;
+    text-shadow: 2px 2px grey;
 }
 
 .arrowButts:hover {
-  background-color: lightpink;
+  color: lightcoral;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+.space {
+  margin-right: 35px;
+}
+
+
+#secRow {
+  margin-right: 250px;
+}
+
+#thirdRow {
+  margin-right: 500px;
+}
+
 #sad {
-  margin-right: 40px;
+  padding: 7px 22px;
 }
 
 #angry{
-  margin-right: 250px;
+  padding: 7px 18px;
 }
-#surprised {
-  margin-right: 475px;
-}
+
 
 #left {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 25px;
 }
 #right {
     position: absolute;
-    top: 45%;
+    top: 35%;
     right: 25px;
 }
 
 #window {
-  border-radius: 12px;
   position: relative;
-  width: 80%;
   height: 475px;
-  border: 1.5px solid grey;
-  padding: 50x;
-  background-color: rgba(255,255,255,0.75); 
+  padding: 10px;
+  background-color: rgba(255,255,255,0.45); 
+}
+
+#emotionDisp {
+  margin-top: 100px;
+  font-size: 30px;
+  color: lightcoral;
 }

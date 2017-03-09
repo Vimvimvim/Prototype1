@@ -1,4 +1,18 @@
+<!DOCTYPE html>
+<html >
 <head>
+  <meta charset="UTF-8">
+  <title>Dreamcatcher Prototype Second Task pt. 2</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+   <head>
    <link rel="stylesheet" type ="text/css" href="prototype_task2.css"> 
    <script type="text/javascript" src="prototype_task2.js"></script>
 </head>
@@ -8,58 +22,126 @@
 </a>
 <center>
   <div id = "window">
-    <div id = "scroll">
-    <table>
-      <tr>
-        <th>Date</th>
-        <th>Title</th>
-        <th>Description</th>
-      </tr>
-      <tr>
-        <td>01/10/17</td>
-        <td> <a href = "Jackson.html"> Date with Michael Jackson </a></td>
-        <td>I went on a date with Michael Jackson and his family.</td>
-      </tr
-      <tr>
-        <td>01/07/17</td>
-        <td> <a href = "runningbears.html"> Running from Bear </a></td>
-        <td>I ran from an angry bear.</td>
-      </tr> 
-      <tr>
-        <td>01/05/17</td>
-        <td> <a href = "unicorns.html"> Unicorn Stampede </a></td>
-        <td>I was running down a hill when I saw a ton of unicorns running my way.</td>
-      </tr>
-      <tr>
-        <td>01/04/17</td>
-        <td> <a href = "darrenshair.html"> Darren's hair gained sentience</td>
-        <td>I saw my friend darren and his hair came alive and had faces but not like cute mini faces.</td>
-      </tr>
-      <tr>
-        <td>01/03/17</td>
-        <td> <a href = "ryanbowling.html"> Ryan broke his other foot</td>
-        <td>We went to a bowling alley and Ryan thought it would be smart to kick a bowling ball.</td>
-      </tr>
-      <tr>
-        <td>01/02/17</td>
-        <td> <a href = "kimcrush.html"> Kim admitted her feelings</td>
-        <td>Kim finally professed her love for our TA. I woke up before I could find out if she reciprocated</td>
-      </tr>
-      <tr>
-        <td>01/01/17</td>
-        <td> <a href = "vimalrecord.html"> Vimal breaks world record</td>
-        <td>In my dream, Vimal broke the record for the most plaid shirts ever owned.</td>
-      </tr>
-    </table>
+    <div id = "closingstatement">
+      <p>
+        thank you for entering a dream today
+      </p>
     </div>
-    <a href = "index.html">
+    <br>
+    <br>
+    <div> 
+      <form class = "formz" id = "titleBox">
+        <input type = "text" value = "Vimal breaks world record" size = 20>
+      </form>
+    </div>
+    <div>
+      <form class = "formz" id = "date">
+        <input type = "date" value = "2017-01-01">
+      </form>
+    </div>
+    
+    <div id = "emots">
+    <div class = "row">
+    <div class = dropdown>
+      <button class = "emotionButts" id = "sad">sad</button>
+      <div class="dropdown-content">
+        <p id = "1">lonely</p>
+        <p id = "2">vulnerable</p>
+        <p id = "3">despair</p>
+        <p id = "4">guilty</p>
+        <p id = "5">depressed</p>
+        <p id = "6">hurt</p>
+      </div>
+    </div>
+      <span class = "space">
+      </span>
+    <div class = dropdown>
+      <button class = "emotionButts" id = "happy">happy</button>
+      <div class="dropdown-content">
+        <p id = "7">playful</p>
+        <p id = "9">proud</p>
+        <p id = "10">accepted</p>
+        <p id = "11">powerful</p>
+        <p id = "12">peaceful</p>
+        <p id = "13">trusting</p>
+        <p id = "14">optimistic</p>
+      </div>
+    </div>
+    </div>
+    <div>
+    <div class = dropdown>
+      <button class = "emotionButts" id = "angry">angry</button>
+      <div class="dropdown-content">
+        <p id = "15">let down</p>
+        <p id = "16">humiliated</p>
+        <p id ="17">bitter</p>
+        <p id = "18">mad</p>
+        <p id = "19">aggressive</p>
+        <p id = "20">frustrated</p>
+      </div>
+    </div>
+    <span class = "space" id = "secRow">
+      </span>
+    <div class = dropdown>
+      <button class = "emotionButts" id = "fearful">fearful</button>
+      <div class="dropdown-content">
+        <p id = "22">scared</p>
+        <p id = "23">anxious</p>
+        <p id = "24">insecure</p>
+        <p id = "25">weak</p>
+        <p id = "26">rejected</p>
+        <p id = "27">threatened</p>
+      </div>
+    </div>
+    </div>
+    
+    <div>
+    <div class = dropdown>
+      <button class = "emotionButts" id = "surprised">surprised</button>
+      <div class="dropdown-content">
+        <p id = "28">startled</p>
+        <p id = "29">confused</p>
+        <p id = "30">amazed</p>
+        <p id = "31">excited</p>
+      </div>
+    </div>
+    <span class = "space" id = "thirdRow">
+      </span>
+    <div class = dropdown>
+      <button class = "emotionButts" id = "disgusted">disgusted</button>
+      <div class="dropdown-content">
+        <p id = "32">disapproving</p>
+        <p id = "33">disappointed</p>
+        <p id = "34">awful</p>
+        <p id = "35">ew</p>
+      </div>
+    </div>
+    </div>
+      <div id = "emotionDisp">excited, surprised, happy</div>
+    </div>
+    <div>
+      <form class = "formz" id = "description">
+        <textarea name = "description of dream" cols = "40" rows = "15">In my dream, Vimal broke the record for the most plaid shirts ever owned.</textarea>
+      </form>
+    </div>
+    
+    
+    
+    <button id = "homeButt">main menu</button>
+    <a href = "prototype_task2_pt1.html">
     <button class = "arrowButts" id = "left"> &#8249; 
     </button>
   </a>
+<button class = "arrowButts" id = "right"> &#8250;
+    </button>
+   
   </div>
 </center>
  <br>
 <br>
 <br>
+  
+    <script src="prototype_task2.js"></script>
 
-
+</body>
+</html>

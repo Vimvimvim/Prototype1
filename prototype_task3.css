@@ -10,11 +10,19 @@
 }
 
 #title:hover {
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px grey;
 }
 
 .arrowButts:hover {
-  background-color: lightpink;
+  color: lightcoral;
+}
+
+#question {
+  font-size: 35px;
+  color: #3d3d5c;
+  cursor: default;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 body{
@@ -30,60 +38,43 @@ body{
 
 
 .arrowButts {
-  background: LightCoral;
-  font-size: 30px;
+  font-size: 100px;
   text-align: center;
   vertical-align: middle;
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  padding-bottom: 14px;
+  border: none;
+  background: none;
+  color: black;
   vertical-align: middle;
   cursor: pointer;
 }
 
 
 #window {
-  border-radius: 12px;
   position: relative;
-  width: 80%;
   height: 475px;
-  border: 1.5px solid grey;
-  padding: 50px;
-  background-color: rgba(255,255,255,0.75); 
+  padding: 10px;
+  background-color: rgba(255,255,255,0.45); 
 }
 
 #picHolder {
   border-radius: 12px;
   position: relative;
   width: 80%;
+  margin: 0px;
   height: 300px;
   border: 1.5px;
-  padding: 25px;
-
-  
-  
+  padding: 5px;
 }
-
-/*#dropDownHolder {
-  border-radius: 12px;
-  position: relative;
-  width: 100px;
-  height: 20px;
-  border: 1.5px solid red;
-  padding: 50px;
-  
-  background-color: rgba(255,255,255,0.75); 
-}*/
-
 
 #left {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 25px;
 }
 #right {
     position: absolute;
-    top: 45%;
+    top: 35%;
     right: 25px;
 }
 
@@ -92,7 +83,9 @@ body{
     position: relative;
     background-color: lightcoral;
     color: black;
-    font-size: 16px;
+    padding: 8px;
+    margin: 0px;
+    font-size: 19px;
     border: none;
     cursor: pointer;
 }
@@ -106,22 +99,20 @@ body{
 .dropdown {
   border-radius: 12px;
   position: relative;
-  width: 100px;
   height: 20px;
   border: 1.5px ;
+  margin: 0px;
   padding: 20px;
-  
-
-    position: relative;
-    display: inline-block;
+  display: inline-block;
 }
+
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    width: 75%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -129,8 +120,10 @@ body{
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    margin: 0px;
+    padding: 10px;
     text-decoration: none;
+    cursor: pointer;
     display: block;
 }
 

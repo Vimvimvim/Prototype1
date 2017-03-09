@@ -1,47 +1,57 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html >
 <head>
+  <meta charset="UTF-8">
+  <title>Dreamcatcher Prototype First Task pt. 2</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+   <head>
    <link rel="stylesheet" type ="text/css" href="prototype_task1_pt2.css"> 
    
 </head>
 <body>
 
+<a href = "index.html">
 <button id = "title"> dreamcatcher </button>
 </a>
 <center>
   <div id = "window">
-    <div id = "closingstatement">
-      <p>
-        thank you for entering a dream today
-      </p>
-    </div>
+   
     <br>
     <br>
     <div> 
       <form class = "formz" id = "titleBox">
-        <input type = "text" value = "title of dream" size = 15>
+        <input type = "text" value = "title of dream" contenteditable = true size = 15 onfocus="inputFocus(this)" onblur="inputBlur(this)" onkeypress = "expand(this)" onclick = shorten(this)>
       </form>
     </div>
     <div>
       <form class = "formz" id = "date">
-        <input type = "date">
+        <input type = "date" onfocus="inputFocus(this)" onblur="inputBlur(this)">
       </form>
     </div>
+     
     <div>
       <form class = "formz" id = "description">
-        <textarea name = "description of dream" cols = "40" rows = "15">description of dream</textarea>
+        <textarea name = "description of dream" cols = "40" rows = "15" onfocus="inputFocus(this)" onblur="inputBlur(this)">description of dream</textarea>
       </form>
     </div>
+    <div id = "closingstatement">
+      <p>thank you for entering a dream today</p>
+    </div>
     <button id = "homeButt">main menu</button>
-    
+  
     <button class = "arrowButts" id = "left"> &#8249; 
     </button>
-  </a>
-
     <button class = "arrowButts" id = "right"> &#8250;
     </button>
-    </a>
+    
   </div>
 </center>
  <br>
@@ -49,5 +59,9 @@
 <br>
 
 <script type="text/javascript" src="prototype_task1_pt2.js"></script>
+</body>
+  
+    <script src="js/index.js"></script>
+
 </body>
 </html>
